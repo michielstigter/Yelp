@@ -1,13 +1,16 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-	gem 'rspec-rails'
-	gem 'capybara'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'rspec-collection_matchers'
 end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
+
+gem 'devise'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -42,4 +45,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

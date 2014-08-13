@@ -1,0 +1,4 @@
+<% @restaurant.reviews.each do |comments| %>
+  <h4>
+    <%= "#{comments.comment} (#{comments.rating})" %>
+  <% end %>
