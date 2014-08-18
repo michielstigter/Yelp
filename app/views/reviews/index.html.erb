@@ -1,4 +1,11 @@
 <% @restaurant.reviews.each do |comments| %>
   <h4>
-    <%= "#{comments.comment} (#{comments.rating})" %>
+    <%= "#{comments.comment} (#{star_rating(comments.rating)})" %>
+    <em>Posted
+      <%= time_ago_in_words(comments.created_at) %>
+      ago
+    </em>
+    <span class='likes_count'><%= comments.likes.count %></span>
+    <span>likes</span>
+    <%= link_to 'Like this review', review_likes_path(comments), class: 'like-link' %>
   <% end %>

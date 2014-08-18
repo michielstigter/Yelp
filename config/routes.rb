@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   resources :reviews do
-    resources :endorsements
+    resources :likes
   end
 
   root to: "restaurants#index"

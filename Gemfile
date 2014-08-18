@@ -4,6 +4,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 
@@ -11,6 +13,8 @@ end
 gem 'rails', '4.1.4'
 
 gem 'devise'
+
+gem 'warden'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
